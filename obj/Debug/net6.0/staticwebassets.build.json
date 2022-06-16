@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "+G2PJTi7CTh1XhwZviDnUCPHZhCoA4KKM8WJSZEhIKQ=",
+  "Source": "html-to-pdf",
+  "BasePath": "_content/html-to-pdf",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
