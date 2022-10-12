@@ -10,12 +10,8 @@ namespace html_to_pdf.Services
 
             var document = await builder
                 .SetFormat(PuppeteerSharp.Media.PaperFormat.A4)
+                .SetScale(request.Scale.HasValue ? request.Scale.Value : 1)
                 .BuildAsync(request.Nombre);
-
-            var base64 = Convert.ToBase64String(document.Bytes);
-
-            Console.WriteLine("BASE64: " + base64);
-
             return document;
         }
 

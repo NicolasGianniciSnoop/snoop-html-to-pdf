@@ -4,7 +4,6 @@ D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net6.0\html-to-pdf.deps.json
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net6.0\html-to-pdf.runtimeconfig.json
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net6.0\html-to-pdf.dll
-D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net6.0\ref\html-to-pdf.dll
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net6.0\html-to-pdf.pdb
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\bin\Debug\net6.0\Microsoft.OpenApi.dll
@@ -29,3 +28,4 @@ D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\obj\Debug\net
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\obj\Debug\net6.0\ref\html-to-pdf.dll
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\obj\Debug\net6.0\html-to-pdf.pdb
 D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\obj\Debug\net6.0\html-to-pdf.genruntimeconfig.cache
+D:\Trabajo\Snoop Consulting 2022\Iram\iram-html-to-pdf\html-to-pdf\obj\Debug\net6.0\refint\html-to-pdf.dll

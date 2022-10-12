@@ -16,6 +16,7 @@ namespace html_to_pdf.Services
         {
             htmlDocument = _htmlDocument;
             pdfOptions = new PdfOptions();
+            
             launchOptions = new LaunchOptions 
             { 
                 Headless = true,
@@ -48,6 +49,12 @@ namespace html_to_pdf.Services
             return this;
         }
 
+        public PDFBuilder SetScale(decimal scale)
+        {
+            pdfOptions.Scale = scale;
+            return this;
+        }
+
         public PDFBuilder SetPageRanges(int from, int to)
         {
             if (validRange(from, to))
@@ -65,7 +72,7 @@ namespace html_to_pdf.Services
             await page.SetContentAsync(htmlDocument);
             var data = await page.PdfDataAsync(pdfOptions);
             
-            browser.CloseAsync();
+            await browser.CloseAsync();
             reset();
 
             return new PDFDocument
