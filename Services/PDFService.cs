@@ -10,6 +10,8 @@ namespace html_to_pdf.Services
 
             var document = await builder
                 .SetFormat(PuppeteerSharp.Media.PaperFormat.A4)
+                .SetHeader(request.Header)
+                .SetFooter(request.Footer)
                 .SetScale(request.Scale.HasValue ? request.Scale.Value : 1)
                 .BuildAsync(request.Nombre);
             return document;

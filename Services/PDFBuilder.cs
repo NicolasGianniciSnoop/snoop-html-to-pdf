@@ -27,6 +27,27 @@ namespace html_to_pdf.Services
                 }
             };
         }
+
+        public PDFBuilder SetHeader(string headerHTML)
+        {
+            if (headerHTML is not null) 
+            {
+                pdfOptions.HeaderTemplate = headerHTML;
+                pdfOptions.DisplayHeaderFooter = true;
+            }
+            return this;
+        }
+
+        public PDFBuilder SetFooter(string footerHTML)
+        {
+            if (footerHTML is not null)
+            {
+                pdfOptions.FooterTemplate = footerHTML;
+                pdfOptions.DisplayHeaderFooter = true;
+            }
+            return this;
+        }
+
         public PDFBuilder SetFormat(PaperFormat paperFormat)
         {
             pdfOptions.Format = paperFormat;
