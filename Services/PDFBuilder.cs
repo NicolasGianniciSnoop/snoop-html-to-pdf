@@ -16,7 +16,8 @@ namespace html_to_pdf.Services
         {
             htmlDocument = _htmlDocument;
             pdfOptions = new PdfOptions();
-            
+            pdfOptions.PrintBackground = true;
+
             launchOptions = new LaunchOptions 
             { 
                 Headless = true,
@@ -88,9 +89,14 @@ namespace html_to_pdf.Services
 
         public async Task<PDFDocument> BuildAsync(string filename)
         {
+            // using var browserFetcher = new BrowserFetcher();
+            // await browserFetcher.DownloadAsync(BrowserFetcher.DefaultRevision);
             var browser = await Puppeteer.LaunchAsync(launchOptions);
             var page = await browser.NewPageAsync();
             await page.SetContentAsync(htmlDocument);
+
+            Thread.Sleep(5000);
+
             var data = await page.PdfDataAsync(pdfOptions);
             
             await browser.CloseAsync();
